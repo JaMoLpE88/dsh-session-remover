@@ -163,7 +163,7 @@ npm run check   # syntax checks plus the path-validation self-check
 npm test        # end-to-end Host deletion against a throwaway tree
 ```
 
-`check.mjs` covers the containment rules (invalid ids, `..`, wrong depth, foreign directories). `test-host.mjs` drives the real handler with stubbed Harness services: request gating, invalid id, cold deletion with a surviving sibling, live-agent teardown, the cache-file fallback and the refusal to treat a log-less directory as storage.
+`check.mjs` covers the containment rules (invalid ids, `..`, wrong depth, foreign directories) and that the Client module id, the package name and the patch row agree — a mismatch crashes web boot. `test-host.mjs` drives the real handler with stubbed Harness services: request gating, invalid id, cold deletion with a surviving sibling, live-agent teardown, the cache-file fallback and the refusal to treat a log-less directory as storage.
 
 Local install:
 

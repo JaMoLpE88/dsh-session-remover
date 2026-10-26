@@ -3,7 +3,7 @@
  * and one confirmation dialog. Every user-visible string is English.
  */
 window.__ModuleLoader__.load({
-  id: 'dsh-session-remover',
+  id: '@jamolpe88/dsh-session-remover',
   factory(require) {
     const React = require('react')
     const h = React.createElement

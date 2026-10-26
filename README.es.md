@@ -163,7 +163,7 @@ npm run check   # comprobación de sintaxis y el self-check de validación de ru
 npm test        # borrado Host de extremo a extremo sobre un árbol temporal
 ```
 
-`check.mjs` cubre las reglas de contención (ids inválidos, `..`, profundidad incorrecta, carpetas ajenas). `test-host.mjs` ejecuta el handler real con servicios del Harness simulados: filtro de petición, id inválido, borrado en frío con una sesión vecina que sobrevive, cierre del agente vivo, el respaldo del fichero de caché y la negativa a tratar una carpeta sin log como almacén.
+`check.mjs` cubre las reglas de contención (ids inválidos, `..`, profundidad incorrecta, carpetas ajenas) y que el id del módulo cliente, el nombre del paquete y la fila del patch coincidan — si no, el arranque web crashea. `test-host.mjs` ejecuta el handler real con servicios del Harness simulados: filtro de petición, id inválido, borrado en frío con una sesión vecina que sobrevive, cierre del agente vivo, el respaldo del fichero de caché y la negativa a tratar una carpeta sin log como almacén.
 
 Instalación local:
 
