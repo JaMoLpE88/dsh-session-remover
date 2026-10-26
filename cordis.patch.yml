@@ -1,0 +1,3 @@
+- insert:
+    - id: session-remover
+      name: '@jamolpe88/dsh-session-remover'

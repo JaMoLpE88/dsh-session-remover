@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session Remover",
+    "description": "Permanently deletes a session from its sidebar menu, including the conversation files and cached data stored on this PC."
+  }
+}

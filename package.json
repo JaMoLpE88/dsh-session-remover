@@ -1,0 +1,71 @@
+{
+  "name": "@jamolpe88/dsh-session-remover",
+  "version": "0.1.0",
+  "description": "Permanently delete a DeepSeek Harness session from its sidebar menu, including the conversation files and cached data stored on your PC.",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "session",
+    "session-manager",
+    "session-delete",
+    "delete",
+    "privacy",
+    "storage"
+  ],
+  "license": "MIT",
+  "author": "JaMoLpE88",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaMoLpE88/dsh-session-remover.git"
+  },
+  "homepage": "https://github.com/JaMoLpE88/dsh-session-remover#readme",
+  "bugs": {
+    "url": "https://github.com/JaMoLpE88/dsh-session-remover/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.1-rc.3"
+  },
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/*.png",
+    "README.md",
+    "README.es.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node --check index.js && node --check client.js && node check.mjs",
+    "test": "node test-host.mjs"
+  }
+}
