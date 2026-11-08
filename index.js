@@ -371,7 +371,7 @@ async function dropProjectionCache(ctx, root, sessionId) {
 }
 
 /**
- * ponytail: best-effort. The SQLite search index only drops rows for removed
+ * Best-effort. The SQLite search index only drops rows for removed
  * sessions during its own reconcile pass, which runs on the first search, so
  * one cheap search clears the deleted session's stored text now. If it is
  * unavailable or disabled, the next real search does the same work.

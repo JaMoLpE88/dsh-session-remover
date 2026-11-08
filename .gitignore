@@ -5,3 +5,15 @@ node_modules/
 Thumbs.db
 coverage/
 .npm-cache/
+
+# Agent and planning artifacts (never committed)
+docs/superpowers/
+docs/plans/
+.superpowers/
+.research/
+.artifacts/
+.claude/
+.cursor/
+.codex/
+AGENTS.md
+CLAUDE.md
