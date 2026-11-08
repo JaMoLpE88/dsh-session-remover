@@ -2,10 +2,18 @@
 
 All notable changes to `@jamolpe88/dsh-session-remover` are documented here.
 
+## 0.1.2 — 2026-11-08
+
+- Repository hygiene: neutralized an internal code-comment wording and added ignore rules. No functional changes.
+
 ## 0.1.1 — 2026-10-26
 
 - **Fixed the boot crash** caused by the scoped package name: the Client bundle registered itself as `dsh-session-remover` while the package loads as `@jamolpe88/dsh-session-remover`, so the module loader saw a duplicate factory and the entry never activated. `client.js` now registers under the package name.
 - `npm run check` now fails when the Client module id, the package name and the patch row disagree, so this cannot ship again.
+
+## 0.1.2 — 2026-11-08
+
+- Repository hygiene: neutralized an internal code-comment wording and added ignore rules. No functional changes.
 
 ## 0.1.0 — 2026-10-26
 

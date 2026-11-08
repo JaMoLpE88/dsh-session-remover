@@ -1,6 +1,6 @@
 {
   "name": "@jamolpe88/dsh-session-remover",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Permanently delete a DeepSeek Harness session from its sidebar menu, including the conversation files and cached data stored on your PC.",
   "keywords": [
     "dsh",
